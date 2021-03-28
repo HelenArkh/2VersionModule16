@@ -1,0 +1,7 @@
+D:\VS_Projects\2VersionModule16\UserTicketService\UserTicketService\bin\Debug\UserTicketService.exe.config
+D:\VS_Projects\2VersionModule16\UserTicketService\UserTicketService\bin\Debug\UserTicketService.exe
+D:\VS_Projects\2VersionModule16\UserTicketService\UserTicketService\bin\Debug\UserTicketService.pdb
+D:\VS_Projects\2VersionModule16\UserTicketService\UserTicketService\obj\Debug\UserTicketService.csprojAssemblyReference.cache
+D:\VS_Projects\2VersionModule16\UserTicketService\UserTicketService\obj\Debug\UserTicketService.csproj.CoreCompileInputs.cache
+D:\VS_Projects\2VersionModule16\UserTicketService\UserTicketService\obj\Debug\UserTicketService.exe
+D:\VS_Projects\2VersionModule16\UserTicketService\UserTicketService\obj\Debug\UserTicketService.pdb
