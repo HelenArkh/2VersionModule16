@@ -27,7 +27,7 @@ namespace UserTicketService
             FakeBaseData.Add(ticket);
         }
 
-        public void DeleteTicket(Ticket ticket)
+        private void DeleteTicket(Ticket ticket)
         {
             FakeBaseData.Remove(ticket);
         }

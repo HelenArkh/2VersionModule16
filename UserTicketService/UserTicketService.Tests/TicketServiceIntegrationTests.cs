@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,12 +20,14 @@ namespace UserTicketService.Tests
             ticketServiceTest.SaveTicket(newTicket);
 
             var allTicketsAfterAddingNewTicket = ticketServiceTest.GetAllTickets();
-            CollectionAssert.Contains(allTicketsAfterAddingNewTicket, newTicket);
+            NUnit.Framework.CollectionAssert.Contains(allTicketsAfterAddingNewTicket, newTicket);
 
-            ticketServiceTest.DeleteTicket(newTicket);
+            PrivateObject obj = new PrivateObject(ticketServiceTest);
+
+            obj.Invoke("DeleteTicket", newTicket);
 
             var allTicketsAfterDeletingNewTicket = ticketServiceTest.GetAllTickets();
-            CollectionAssert.DoesNotContain(allTicketsAfterDeletingNewTicket, newTicket);
+            NUnit.Framework.CollectionAssert.DoesNotContain(allTicketsAfterDeletingNewTicket, newTicket);
         }
     }
 }
